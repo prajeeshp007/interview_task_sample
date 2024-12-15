@@ -1,0 +1,124 @@
+{
+  "project_info": {
+    "project_number": "439266446750",
+    "project_id": "sample-project-5d1e8",
+    "storage_bucket": "sample-project-5d1e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439266446750:android:57966e792a9779b2f4da8f",
+        "android_client_info": {
+          "package_name": "com.example"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA_SAn41iHA28e7FitwS0ZY6vTOMhLChI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439266446750:android:f1cfcefcace48589f4da8f",
+        "android_client_info": {
+          "package_name": "com.example.fcm_notification_sample"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA_SAn41iHA28e7FitwS0ZY6vTOMhLChI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439266446750:android:30ee6a6931b53694f4da8f",
+        "android_client_info": {
+          "package_name": "com.example.infoprark_api_task"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA_SAn41iHA28e7FitwS0ZY6vTOMhLChI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439266446750:android:30b45300caeac611f4da8f",
+        "android_client_info": {
+          "package_name": "com.example.interview_task_sample"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA_SAn41iHA28e7FitwS0ZY6vTOMhLChI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439266446750:android:079b17ba30616562f4da8f",
+        "android_client_info": {
+          "package_name": "com.example.main_shopping_app_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA_SAn41iHA28e7FitwS0ZY6vTOMhLChI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439266446750:android:68a55ea726de25daf4da8f",
+        "android_client_info": {
+          "package_name": "com.example.task_sample"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA_SAn41iHA28e7FitwS0ZY6vTOMhLChI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
