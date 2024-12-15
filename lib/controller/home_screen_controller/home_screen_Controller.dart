@@ -8,7 +8,7 @@ class homescreencontroller with ChangeNotifier {
   double _progress = 0.0;
   bool _isUploading = false;
   bool _isFailed = false;
-  String? filePath; // File path for the selected file
+  String? filePath;
   VideoPlayerController? _videoController;
   UploadTask? _currentUploadTask;
 
@@ -19,7 +19,7 @@ class homescreencontroller with ChangeNotifier {
 
   final ImagePicker _picker = ImagePicker();
 
-  /// Picks and uploads a file
+  ///  code for Picks and uploads  file
   Future<void> pickAndUploadFile(BuildContext context) async {
     try {
       final pickedFile = await _picker.pickVideo(
@@ -35,7 +35,7 @@ class homescreencontroller with ChangeNotifier {
 
       filePath = pickedFile.path;
 
-      // Check file size
+      // to  Check file size greater than 100mb
       final file = File(filePath!);
       final fileSizeInBytes = await file.length();
       final fileSizeInMB = fileSizeInBytes / (1024 * 1024);
@@ -47,12 +47,12 @@ class homescreencontroller with ChangeNotifier {
         return;
       }
 
-      // Initialize video for local playback if it's a video file
+      /// code for checkimg its video
       if (filePath!.endsWith('.mp4')) {
         _initializeVideo(filePath!);
       }
 
-      // Start the upload
+      // code for start upload
       await _uploadFile(filePath!, context);
     } catch (e) {
       _isFailed = true;
@@ -63,7 +63,7 @@ class homescreencontroller with ChangeNotifier {
     }
   }
 
-  /// Initializes the video for preview
+  /// code for Initializes the video for preview
   void _initializeVideo(String filePath) {
     _videoController?.dispose();
     _videoController = VideoPlayerController.file(File(filePath))
@@ -125,11 +125,10 @@ class homescreencontroller with ChangeNotifier {
       final file = File(filePath);
       final fileName = filePath.split('/').last;
 
-      // Firebase Storage Reference
+      // code for to take Firebase Storage Reference
       final storageRef = FirebaseStorage.instance.ref('uploads/$fileName');
       final uploadTask = storageRef.putFile(file);
 
-      // Monitor upload progress
       uploadTask.snapshotEvents.listen((event) {
         _progress = event.bytesTransferred / event.totalBytes;
         notifyListeners();
@@ -157,7 +156,6 @@ class homescreencontroller with ChangeNotifier {
     }
   }
 
-  /// Retry uploading the last file
   void retryUpload(BuildContext context) {
     if (filePath != null) {
       pickAndUploadFile(context);
@@ -168,7 +166,6 @@ class homescreencontroller with ChangeNotifier {
     }
   }
 
-  /// Disposes the controller
   @override
   void dispose() {
     _videoController?.dispose();

@@ -26,10 +26,10 @@ class HomeScreen extends StatelessWidget {
                   aspectRatio: controller.videoController!.value.aspectRatio,
                   child: VideoPlayer(controller.videoController!),
                 )
-              // Show a loading message while the video initializes
               else if (controller.filePath != null &&
                   controller.filePath!.endsWith('.mp4'))
                 const Center(child: Text("Video is loading..."))
+
               // code to display image  if Image is Selected
               else if (controller.filePath != null &&
                   (controller.filePath!.endsWith('.jpg') ||
@@ -38,7 +38,6 @@ class HomeScreen extends StatelessWidget {
                 Image.file(File(controller.filePath!)),
               const SizedBox(height: 16),
 
-              // code for Upload Progress
               if (controller.isUploading)
                 Column(
                   children: [
